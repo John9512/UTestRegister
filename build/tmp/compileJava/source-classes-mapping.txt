@@ -1,0 +1,26 @@
+userinterface/UTestRegisterFormAddressPage.java
+ userinterface.UTestRegisterFormAddressPage
+model/DataFormUTestRegister.java
+ model.DataFormUTestRegister
+userinterface/UTestRegisterFormPersonalPage.java
+ userinterface.UTestRegisterFormPersonalPage
+userinterface/UTestMainPage.java
+ userinterface.UTestMainPage
+util/Constant.java
+ util.Constant
+tasks/CompleteFormPersonalUser.java
+ tasks.CompleteFormPersonalUser
+tasks/OpenUpUtestPage.java
+ tasks.OpenUpUtestPage
+tasks/CompleteFormAddressUser.java
+ tasks.CompleteFormAddressUser
+userinterface/UTestRegisterFormPasswordPage.java
+ userinterface.UTestRegisterFormPasswordPage
+questions/Responder.java
+ questions.Responder
+tasks/CompleteFormPasswordUser.java
+ tasks.CompleteFormPasswordUser
+userinterface/UTestRegisterFormDevicePage.java
+ userinterface.UTestRegisterFormDevicePage
+tasks/CompleteFormDeviceUser.java
+ tasks.CompleteFormDeviceUser

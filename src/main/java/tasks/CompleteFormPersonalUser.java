@@ -9,6 +9,7 @@ import net.serenitybdd.screenplay.actions.SelectFromOptions;
 import userinterface.UTestRegisterFormPersonalPage;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
+import static userinterface.UTestRegisterFormPersonalPage.*;
 
 public class CompleteFormPersonalUser implements Task {
 
@@ -24,14 +25,14 @@ public class CompleteFormPersonalUser implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Enter.theValue(dataUser.getFirstName()).into(UTestRegisterFormPersonalPage.INPUT_FIRST_NAME),
-                Enter.theValue(dataUser.getLastName()).into(UTestRegisterFormPersonalPage.INPUT_LAST_NAME),
-                Enter.theValue(dataUser.getEmail()).into(UTestRegisterFormPersonalPage.INPUT_EMAIL),
-                SelectFromOptions.byVisibleText(dataUser.getMonthBirth()).from(UTestRegisterFormPersonalPage.ENTER_MONTH_BIRTH),
-                SelectFromOptions.byVisibleText(dataUser.getDayBirth()).from(UTestRegisterFormPersonalPage.ENTER_DAY_BIRTH),
-                SelectFromOptions.byVisibleText(dataUser.getYearBirth()).from(UTestRegisterFormPersonalPage.ENTER_YEAR_BIRTH),
-                Enter.theValue(dataUser.getLanguage()).into(UTestRegisterFormPersonalPage.INPUT_LENGUAGE),
-                Click.on(UTestRegisterFormPersonalPage.BUTTON_NEXT_FORM_PAGE)
+        actor.attemptsTo(Enter.theValue(dataUser.getFirstName()).into(INPUT_FIRST_NAME),
+                Enter.theValue(dataUser.getLastName()).into(INPUT_LAST_NAME),
+                Enter.theValue(dataUser.getEmail()).into(INPUT_EMAIL),
+                SelectFromOptions.byVisibleText(dataUser.getMonthBirth()).from(ENTER_MONTH_BIRTH),
+                SelectFromOptions.byVisibleText(dataUser.getDayBirth()).from(ENTER_DAY_BIRTH),
+                SelectFromOptions.byVisibleText(dataUser.getYearBirth()).from(ENTER_YEAR_BIRTH),
+                Enter.theValue(dataUser.getLanguage()).into(INPUT_LENGUAGE),
+                Click.on(BUTTON_NEXT_FORM_PAGE)
                 );
 
     }

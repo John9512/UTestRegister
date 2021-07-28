@@ -17,3 +17,5 @@ Feature: UTest Register page
     Examples:
       | strFirstName | strLastName | strEmail                    | strMonthBirth | strDayBirth | strYearBirth | strLanguage | strCity  | strPostalCode | strCountry | strComputerOS | strComputerOSVersion | strComputerLanguage | strMobileBrand | strMobileModel | strMobileOS | strPassword   | strValidateLabel |
       | John Mario   | Cabrera     | jcabrera123jo4@yopmail.com  | December      | 6           | 1964         | Spanish     | Medellín | 540928        | Israel     | Windows       | 10                   | English             | Huawei         | Mercury        | Android 4.0 | Choucair2021* | The last step    |
+
+

@@ -13,30 +13,33 @@ import tasks.*;
 
 import java.util.List;
 
+import static net.serenitybdd.screenplay.GivenWhenThen.*;
+import static net.serenitybdd.screenplay.actors.OnStage.*;
 import static util.Constant.ZERO;
 
 public class UTestRegisterStepDefinitions {
     @Before
     public void setStage(){
-        OnStage.setTheStage(new OnlineCast());
+        setTheStage(new OnlineCast());
     }
 
     @Given("^than John wants to create a new account at utest page with a registration form$")
     public void asJohnWantsToCreateANewAccountAtUTestPageWithARegistrationForm(){
-        OnStage.theActorCalled("John").wasAbleTo(OpenUpUtestPage.thePage());
+        theActorCalled("John").wasAbleTo(OpenUpUtestPage.thePage());
     }
 
     @When("^he completes the registration form$")
     public void heCompletesTheRegistrationForm(List<DataFormUTestRegister> dataUser) throws Exception {
-        OnStage.theActorInTheSpotlight().attemptsTo(CompleteFormPersonalUser.personalData(dataUser.get(ZERO)),
-                CompleteFormAddressUser.addressData(dataUser.get(ZERO)),
-                CompleteFormDeviceUser.deviceData(dataUser.get(ZERO)),
-                CompleteFormPasswordUser.passwordData(dataUser.get(ZERO)));
+        theActorInTheSpotlight().attemptsTo(
+                CompleteFormPersonalUser.personalData(dataUser.get(ZERO)),//Diligenciar.losDatosPersonales
+                CompleteFormAddressUser.addressData(dataUser.get(ZERO)),//DiligenciarLa.informacionDeUbicacion
+                CompleteFormDeviceUser.deviceData(dataUser.get(ZERO)),//Seleccionar.laConfiguracionDeLosDispositivos
+                CompleteFormPasswordUser.passwordData(dataUser.get(ZERO)));//Definir.losDatosDeSeguridad
     }
 
     @Then("^he sees the checkout label$")
     public void heSeesTheCheckoutLabel(List<DataFormUTestRegister> dataUser) throws Exception {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(answer.the(dataUser.get(ZERO))));
+        theActorInTheSpotlight().should(seeThat(answer.the(dataUser.get(ZERO))));
     }
 
 

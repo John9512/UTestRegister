@@ -8,7 +8,7 @@ import model.DataFormUTestRegister;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-import questions.Responder;
+import questions.answer;
 import tasks.*;
 
 import java.util.List;
@@ -36,7 +36,7 @@ public class UTestRegisterStepDefinitions {
 
     @Then("^he sees the checkout label$")
     public void heSeesTheCheckoutLabel(List<DataFormUTestRegister> dataUser) throws Exception {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Responder.the(dataUser.get(ZERO))));
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(answer.the(dataUser.get(ZERO))));
     }
 
 

@@ -16,11 +16,11 @@ tasks/CompleteFormAddressUser.java
  tasks.CompleteFormAddressUser
 userinterface/UTestRegisterFormPasswordPage.java
  userinterface.UTestRegisterFormPasswordPage
-questions/Responder.java
- questions.Responder
-tasks/CompleteFormPasswordUser.java
- tasks.CompleteFormPasswordUser
 userinterface/UTestRegisterFormDevicePage.java
  userinterface.UTestRegisterFormDevicePage
+tasks/CompleteFormPasswordUser.java
+ tasks.CompleteFormPasswordUser
+questions/answer.java
+ questions.answer
 tasks/CompleteFormDeviceUser.java
  tasks.CompleteFormDeviceUser

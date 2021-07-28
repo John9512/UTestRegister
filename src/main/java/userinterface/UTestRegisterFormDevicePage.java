@@ -9,7 +9,6 @@ public class UTestRegisterFormDevicePage extends PageObject {
 
     public static final Target CONT_COMPUTER_OS = Target.the("Click to display the computer OS list").located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[1]/div[1]/div[2]/div/div[1]/span/span[2]"));
     public static final Target INPUT_COMPUTER_OS = Target.the("field where the OS ot the user's computer is entered").located(By.xpath("//body/ui-view[1]/main[1]/section[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/input[1]"));
-    public static final Target FIELD_COMPUTER_OS = Target.the("opción para dar enter").located(By.xpath("//input[@type='search' and @placeholder='Select OS']"));
 
     public static final Target CONT_VERSION_OS = Target.the("Click to display the computer OS version list").located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[1]/div[2]/div[2]/div/div[1]/span/i"));
     public static final Target INPUT_VERSION_OS = Target.the("field where the OS version ot the user's computer is entered").located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[1]/div[2]/div[2]/div/input[1]"));

@@ -6,15 +6,15 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 import userinterface.UTestRegisterFormPasswordPage;
 
-public class Responder implements Question {
+public class answer implements Question {
 
     private DataFormUTestRegister dataList;
 
-    public static Responder the(DataFormUTestRegister dataFormUTestRegister) {
-        return new Responder(dataFormUTestRegister);
+    public static answer the(DataFormUTestRegister dataFormUTestRegister) {
+        return new answer(dataFormUTestRegister);
     }
 
-    public Responder(DataFormUTestRegister dataList) {
+    public answer(DataFormUTestRegister dataList) {
         this.dataList = dataList;
     }
 

@@ -27,7 +27,6 @@ public class CompleteFormDeviceUser implements Task {
         actor.attemptsTo(WaitUntil.the(AUTODETECTED,isVisible()).forNoMoreThan(2).seconds(),
                 Click.on(CONT_COMPUTER_OS),
                 Enter.theValue(dataList.getComputerOS()).into(INPUT_COMPUTER_OS).thenHit(Keys.ENTER),
-                //Hit.the(Keys.ENTER).keyIn(FIELD_COMPUTER_OS),
                 Click.on(CONT_VERSION_OS),
                 Enter.theValue(dataList.getComputerVersion()).into(INPUT_VERSION_OS).thenHit(Keys.ENTER),
                 Click.on(CONT_LENGUAGE_OS),

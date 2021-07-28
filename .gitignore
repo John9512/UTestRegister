@@ -21,3 +21,44 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Eclipse
+.classpath
+.project
+.settings/
+.log
+ 
+# Intellij
+*/.idea/*
+.idea/*
+*/.idea
+*/history/
+*/target/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+/target/*
+/bin/*
+# Gradle
+*/.gradle/*
+.gradle/*
+*/.gradle
+*/build/
+*/out/*
+*.bin
+*.lock
+#ignore los .exe
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+#ignorar carpeta build
+*/build/*
+*/.metadata/
+
+#ignorar los .sonar
+.sonarlint
